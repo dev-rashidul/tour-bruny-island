@@ -176,6 +176,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
 
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
@@ -219,13 +223,13 @@
                   <a class="nav-link" href="#About__tour"> About tour</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Places you see</a>
+                  <a class="nav-link" href="#Where-go">Places you see</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Itinerary</a>
+                  <a class="nav-link" href="#Tour-itinerary">Itinerary</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">FAQ</a>
+                  <a class="nav-link" href="#Faq">FAQ</a>
                 </li>
                 <li class="nav-item primary-btn book-tour-btn">
                   <a class="nav-link" href="#">Book Tour $149</a>
@@ -260,7 +264,7 @@
                     Hobart pickup and drop-off for an easy and enjoyable
                     experience.
                   </p>
-                  <div class="hero__buttons d-flex">
+                  <div class="hero__buttons d-none d-md-flex">
                     <div class="primary-btn">
                       <a href="#">Book Tour $149</a>
                     </div>
@@ -271,7 +275,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="info__btn">
+                  <div class="info__btn d-none d-md-block">
                     <p>
                       <img
                         src="assets/images/check-icon.svg"
@@ -285,7 +289,7 @@
               </div>
               <div class="col-lg-6">
                 <div class="hero__right">
-                  <h6>
+                  <h6 class="d-none d-md-block">
                     <span>Discover Bruny Island:</span> <br />
                     A Journey of Taste and Tranquility
                   </h6>
@@ -299,6 +303,24 @@
                     ></iframe>
                   </div>
                 </div>
+              </div>
+              <div class="hero__buttons d-md-none">
+                <div class="primary-btn">
+                  <a href="#">Book Tour $149</a>
+                </div>
+                <div class="view_tour_guide_btn">
+                  <a href="#"
+                    ><img src="assets/images/pdf-icon.svg" alt="pdf-icon" />
+                    View tour guide
+                  </a>
+                </div>
+              </div>
+              <div class="info__btn d-md-none">
+                <p>
+                  <img src="assets/images/check-icon.svg" alt="check-icon" />
+                  <span> Recommended by 97% of travellers </span>
+                  <img src="assets/images/info-icon.svg" alt="info-icon" />
+                </p>
               </div>
             </div>
           </div>
@@ -318,7 +340,7 @@
       <section id="About__tour">
         <div class="about__wrapper">
           <div class="container">
-            <div class="row">
+            <div class="row justify-content-end justify-content-lg-start">
               <div class="col-md-6 col-lg-4">
                 <div class="about__icon">
                   <img src="assets/images/about-a.svg" alt="about-a" />
@@ -369,25 +391,25 @@
             </div>
             <div class="island__info__wrapper">
               <div class="row">
-                <div class="col-md-6 col-lg-3">
+                <div class="col-4 col-lg-3">
                   <div class="info__card">
                     <h2>50</h2>
                     <p>beaches</p>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <div class="col-4 col-lg-3">
                   <div class="info__card">
                     <h2>36</h2>
                     <p>Waterfalls</p>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <div class="col-4 col-lg-3">
                   <div class="info__card">
                     <h2>362</h2>
                     <p>square kilometers</p>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <div class="col-4 col-lg-3 d-none d-lg-block">
                   <div class="info__card">
                     <h2>100</h2>
                     <p>white wallabies</p>
@@ -557,6 +579,7 @@
                     <div class="col-lg-6">
                       <div class="where__img float-lg-end">
                         <img
+                          class="d-none d-md-block"
                           src="assets/images/sealink-ferry-img.webp"
                           alt="Sealink Ferry"
                         />
@@ -569,6 +592,14 @@
                           <h2>Sealink Ferry</h2>
                         </div>
                         <h6>Stop: 30 minutes</h6>
+
+                        <div class="where__img">
+                          <img
+                            class="d-md-none"
+                            src="assets/images/sealink-ferry-img-mobile.png"
+                            alt="sealink-ferry-img-mobile"
+                          />
+                        </div>
                         <p>
                           With excitement bubbling in the air, we board the
                           Bruny Island Ferry, setting sail across shimmering
@@ -587,7 +618,7 @@
                             Ferry included in tour</span
                           >
                         </div>
-                        <div class="where__buttons d-flex">
+                        <div class="where__buttons d-md-flex">
                           <div class="primary-btn">
                             <a href="#">Book Tour $149</a>
                           </div>
@@ -667,7 +698,7 @@
                             Drive to locations</span
                           >
                         </div>
-                        <div class="where__buttons d-flex">
+                        <div class="where__buttons d-md-flex">
                           <div class="primary-btn">
                             <a href="#">Book Tour $149</a>
                           </div>
@@ -746,7 +777,7 @@
                             Transfer & ferry included</span
                           >
                         </div>
-                        <div class="where__buttons d-flex">
+                        <div class="where__buttons d-md-flex">
                           <div class="primary-btn">
                             <a href="#">Book Tour $149</a>
                           </div>
@@ -827,7 +858,7 @@
                             Transfer & ferry included</span
                           >
                         </div>
-                        <div class="where__buttons d-flex">
+                        <div class="where__buttons d-md-flex">
                           <div class="primary-btn">
                             <a href="#">Book Tour $149</a>
                           </div>
@@ -906,7 +937,7 @@
                             Transfer & ferry included</span
                           >
                         </div>
-                        <div class="where__buttons d-flex">
+                        <div class="where__buttons d-md-flex">
                           <div class="primary-btn">
                             <a href="#">Book Tour $149</a>
                           </div>
@@ -981,7 +1012,7 @@
                             Tour included</span
                           >
                         </div>
-                        <div class="where__buttons d-flex">
+                        <div class="where__buttons d-md-flex">
                           <div class="primary-btn">
                             <a href="#">Book Tour $149</a>
                           </div>
@@ -1061,7 +1092,7 @@
                             Drive to locations</span
                           >
                         </div>
-                        <div class="where__buttons d-flex">
+                        <div class="where__buttons d-md-flex">
                           <div class="primary-btn">
                             <a href="#">Book Tour $149</a>
                           </div>
@@ -1131,7 +1162,7 @@
                             Drive to locations</span
                           >
                         </div>
-                        <div class="where__buttons d-flex">
+                        <div class="where__buttons d-md-flex">
                           <div class="primary-btn">
                             <a href="#">Book Tour $149</a>
                           </div>
@@ -1176,17 +1207,26 @@
         <div class="tour__itinerary__wrapper">
           <div class="container">
             <div class="row align-items-center">
+              <div class="tour__content d-md-none">
+                <h2>
+                  Tour itinerary: <br />
+                  <span
+                    >Explore Bruny Island <br />
+                    beauty and cuisine</span
+                  >
+                </h2>
+              </div>
               <div class="col-lg-6">
                 <div class="tour-itinerary-img text-center">
                   <img
-                    src="assets/images/tour-itinerary-img.png"
+                    src="assets/images/tour-itinerary-img.webp"
                     alt="tour-itinerary-img"
                   />
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="tour__content">
-                  <h2>
+                  <h2 class="d-none d-md-block">
                     Tour itinerary: <br />
                     <span
                       >Explore Bruny Island <br />
@@ -1223,7 +1263,7 @@
                       <li>Drop Hobart <span> (Finish Point)</span></li>
                     </ol>
                   </div>
-                  <div class="tour__iternity__buttons d-flex">
+                  <div class="tour__iternity__buttons d-md-flex">
                     <div class="primary-btn">
                       <a href="#">Book Tour $149</a>
                     </div>
@@ -1252,12 +1292,348 @@
       </section>
 
       <!-- Tour Itinerary Section HTML End -->
+
+      <!-- Landscapes Section HTML Start -->
+
+      <section id="Landscapes">
+        <div class="landscapes__wrapper">
+          <div class="container">
+            <div class="landscapes__top">
+              <span class="sec__tag">- LANDSCAPES</span>
+              <div class="section-title">
+                <h2>Beautiful landscapes</h2>
+              </div>
+              <p>
+                Explore Bruny Island's stunning landscapes and delicious cuisine
+                with our guided tour. Immerse yourself in the island's natural
+                beauty, from rugged coastlines to tranquil forests, and indulge
+                in freshly shucked oysters, artisanal cheeses, and decadent
+                chocolates. Join us for an unforgettable adventure where beauty
+                and gastronomy meet on Bruny Island.
+              </p>
+            </div>
+            <div class="landscapes__slider owl-carousel owl-theme">
+              <div class="landscapes__slides item">
+                <div class="landscapes__img">
+                  <img
+                    src="assets/images/landscapes-img1.webp"
+                    alt="Landscapes Img"
+                  />
+                </div>
+              </div>
+              <div class="landscapes__slides item">
+                <div class="landscapes__img">
+                  <img
+                    src="assets/images/landscapes-img2.webp"
+                    alt="Landscapes Img"
+                  />
+                </div>
+              </div>
+              <div class="landscapes__slides item">
+                <div class="landscapes__img">
+                  <img
+                    src="assets/images/landscapes-img3.webp"
+                    alt="Landscapes Img"
+                  />
+                </div>
+              </div>
+              <div class="landscapes__slides item">
+                <div class="landscapes__img">
+                  <img
+                    src="assets/images/landscapes-img2.webp"
+                    alt="Landscapes Img"
+                  />
+                </div>
+              </div>
+              <div class="landscapes__slides item">
+                <div class="landscapes__img">
+                  <img
+                    src="assets/images/landscapes-img3.webp"
+                    alt="Landscapes Img"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="testimonial__card">
+                <div class="quote__icon">
+                  <img src="assets/images/quote-icon.svg" alt="Quote icon" />
+                </div>
+                <p>
+                  In Bruny Island's beauty, we found myself immersed. The
+                  stunning cliffs and clear waters captivated us. We enjoyed
+                  delicious local cuisine, from fresh oysters to cheese that
+                  melt in your mouth. Encountering the island's white wallabies
+                  added to the magic. Thank you guys for creating such a magical
+                  tour of Bruny Island for us
+                </p>
+                <h6>Emma & Edward Smithers</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Landscapes Section HTML End -->
+
+      <!-- FAQ Section HTML Start -->
+
+      <section id="Faq">
+        <div class="faq__wrapper">
+          <div class="container">
+            <div class="row faq__container align-items-center gx-5">
+              <div class="col-lg-6 px-2">
+                <div class="tour__content">
+                  <span class="sec__tag">- TOUR FAQ’s</span>
+                  <h2 class="pt-3">
+                    Explore our expertly <br />
+                    <span> crafted tours</span>
+                  </h2>
+                  <p>
+                    We've curated our Bruny Island tours to ensure both comfort
+                    and excitement. If you have any queries, feel free to reach
+                    out to us directly or simply fill out the form below.
+                  </p>
+                  <div class="faq__accordion">
+                    <div
+                      class="accordion accordion-flush"
+                      id="accordionFlushExample"
+                    >
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseOne"
+                          >
+                            Accordion Item #1
+                          </button>
+                        </h2>
+                        <div
+                          id="flush-collapseOne"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushExample"
+                        >
+                          <div class="accordion-body">
+                            <p>
+                              Placeholder content for this accordion, which is
+                              intended to demonstrate the
+                              <code>.accordion-flush</code> class. This is the
+                              first item's accordion body.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseTwo"
+                          >
+                            Accordion Item #2
+                          </button>
+                        </h2>
+                        <div
+                          id="flush-collapseTwo"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushExample"
+                        >
+                          <div class="accordion-body">
+                            Placeholder content for this accordion, which is
+                            intended to demonstrate the
+                            <code>.accordion-flush</code> class. This is the
+                            second item's accordion body. Let's imagine this
+                            being filled with some actual content.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseThree"
+                          >
+                            Accordion Item #3
+                          </button>
+                        </h2>
+                        <div
+                          id="flush-collapseThree"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushExample"
+                        >
+                          <div class="accordion-body">
+                            Placeholder content for this accordion, which is
+                            intended to demonstrate the
+                            <code>.accordion-flush</code> class. This is the
+                            third item's accordion body. Nothing more exciting
+                            happening here in terms of content, but just filling
+                            up the space to make it look, at least at first
+                            glance, a bit more representative of how this would
+                            look in a real-world application.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tour__iternity__buttons d-md-flex">
+                    <div class="primary-btn">
+                      <a href="#">Book Tour $149</a>
+                    </div>
+                    <div class="view_tour_guide_btn">
+                      <a href="#"
+                        ><img src="assets/images/pdf-icon.svg" alt="pdf-icon" />
+                        View tour guide
+                      </a>
+                    </div>
+                  </div>
+                  <div class="info__btn">
+                    <p>
+                      <img
+                        src="assets/images/check-icon.svg"
+                        alt="check-icon"
+                      />
+                      <span> Recommended by 97% of travellers </span>
+                      <img src="assets/images/info-icon.svg" alt="info-icon" />
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="faq__img d-none d-md-block">
+                  <img src="assets/images/faq-img.webp" alt="faq-img" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section HTML End -->
+
+      <!-- Book Tour Section HTML Start -->
+
+      <section id="Book-tour">
+        <div class="book__tour__wrapper">
+          <div class="container">
+            <div class="book__tour__container">
+              <div class="book__tour__calender">
+                <img
+                  src="assets/images/tour-calender-img.webp"
+                  alt="tour-calender-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Book Tour Section HTML End -->
     </main>
 
     <!-- Main Part HTML End -->
 
+    <!-- Footer Part HTML Start -->
+
+    <footer id="Footer">
+      <div class="footer_wrapper">
+        <div class="container-fluid">
+          <div class="footer__container">
+            <div class="footer__menu">
+              <h6>Tour Bruny Island</h6>
+              <ul class="footer__nav">
+                <li><a href="#Header">Home</a></li>
+                <li><a href="#About__tour">About Tour Bruny Island </a></li>
+                <li><a href="#Where-go">Places you see</a></li>
+                <li>
+                  <a href="#Tour-itinerary">Tour Bruny Island Itinerary</a>
+                </li>
+                <li><a href="#Landscapes">Beautiful landscapes</a></li>
+                <li><a href="#">Tour Bruny Island FAQ’s</a></li>
+                <li><a href="#Book Tour Bruny Island  $149"></a></li>
+              </ul>
+            </div>
+            <div class="footer__menu">
+              <h6>Tour guides</h6>
+              <ul class="footer__nav">
+                <li><a href="#Where-go">Tour Bruny Island </a></li>
+              </ul>
+            </div>
+            <div class="footer__menu">
+              <h6>About us</h6>
+              <ul class="footer__nav">
+                <li><a href="#About__tour">About us</a></li>
+              </ul>
+            </div>
+            <div class="footer__menu">
+              <h6>Contact us</h6>
+              <ul class="footer__nav">
+                <li>
+                  <a href="mailto:info@tourbrunyisland.com.au"
+                    >info@tourbrunyisland.com.au</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:">Call 0400 000 000</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu">
+              <h6>Legal</h6>
+              <ul class="footer__nav">
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#">Terms & Conditions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="footer__bottom d-md-flex justify-content-between align-items-center"
+          >
+            <div class="footer__copyright">
+              <p>© 2024 Copyright, Tour Bruny Island. All Right Reserved.</p>
+            </div>
+            <div class="footer__social">
+              <ul class="d-flex align-items-center">
+                <li>
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer Part HTML End -->
+
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="assets/js/owl.carousel.min.js"></script>
 
     <!-- Bootstrap JavaScript -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>

@@ -15,6 +15,26 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Gilroy Font */
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts//Gilroy-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts//Gilroy-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts/Gilroy-Bold.ttf);
+  font-weight: 700;
+}
+
 :root {
   --primary: #ff0000;
   --secondary: #232428;
@@ -506,4 +526,230 @@ span.sec__tag {
 
 /* Tour Itinerary Section CSS End */
 
+/* Landscapes Section CSS Start */
+
+.landscapes__wrapper {
+  padding: 80px 0;
+}
+
+.landscapes__top {
+  max-width: 835px;
+}
+
+.landscapes__top p {
+  padding-top: 25px;
+}
+
+.landscapes__slider {
+  padding-top: 40px;
+}
+
+.owl-dots.disabled {
+  display: block !important;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 12px;
+  height: 12px;
+  background: var(--dark);
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 20px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background: var(--primary);
+}
+
+/* Testimonial */
+
+.testimonial {
+  max-width: 670px;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.quote__icon {
+  position: relative;
+}
+
+.quote__icon::before,
+.quote__icon::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42%;
+  height: 2px;
+  background: #acb1b9;
+}
+
+.quote__icon::before {
+  left: 0;
+}
+
+.quote__icon::after {
+  right: 0;
+}
+
+.testimonial__card p {
+  padding: 30px 0;
+}
+
+/* Landscapes Section CSS End */
+
+/* FAQ Section HTML Start */
+
+.faq__wrapper {
+  padding: 80px 0;
+  background: var(--secondary);
+}
+
+.faq__container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.tour__content > p {
+  color: var(--white);
+  padding-top: 20px;
+}
+
+.faq__accordion {
+  padding-top: 20px;
+}
+
+.accordion-item {
+  background: transparent !important;
+  border: 1px solid #393a3d;
+}
+
+.accordion-button {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+  padding: 10px 0;
+  background: none;
+}
+
+.accordion-button::after {
+  background-image: url(../images/chevron-down.svg);
+}
+
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--white);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../images/chevron-up.svg);
+  margin-top: -10px;
+}
+
+.accordion-body {
+  padding-top: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+.accordion-body p {
+  font-size: 16px;
+  line-height: 129%;
+  color: var(--white);
+  padding: 10px 0;
+  margin-bottom: 0;
+}
+
+/* FAQ Section HTML End */
+
+/* Book Tour Section CSS Start */
+
+.book__tour__wrapper {
+  background: url(../images/book-tour-bg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.book__tour__container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Book Tour Section CSS End */
+
 /* Main Part CSS End */
+
+/* Footer Part CSS Start */
+
+.footer_wrapper {
+  padding: 100px 0;
+}
+
+.footer_wrapper .container-fluid {
+  padding: 0 60px;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 60px;
+}
+
+.footer__menu h6 {
+  font-family: "Gilroy";
+  font-size: 15px;
+  font-weight: 700;
+  color: #161c2d;
+  opacity: 0.7;
+}
+
+.footer__nav li {
+  padding: 7px 0;
+}
+
+.footer__nav li a {
+  font-family: "Gilroy";
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  text-decoration-line: underline;
+  color: #181f32;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__nav li a:hover {
+  color: var(--primary);
+}
+
+.footer__bottom {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e7e9ed;
+}
+
+.footer__copyright p {
+  font-family: "Gilroy";
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.1px;
+  margin-bottom: 0;
+  color: #161c2d;
+}
+
+.footer__social ul li i {
+  padding-left: 28px;
+}
+
+.footer__social ul li a {
+  color: var(--black);
+}
+
+/* Footer Part CSS End */

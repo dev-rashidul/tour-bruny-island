@@ -6,14 +6,174 @@
 /* Min Width 993px and Max Width 1199200*/
 
 @media (min-width: 993px) and (max-width: 1200px) {
+  .hero__content,
+  .where__content {
+    padding-right: 0;
+  }
+
+  .hero__content h1 {
+    font-size: 86px;
+  }
+
+  .footer__container {
+    gap: 0px;
+  }
 }
 
 /* Min Width 769px and Max Width 992px */
 
 @media (min-width: 769px) and (max-width: 992px) {
+  .hero__wrapper {
+    padding: 120px 0 80px;
+  }
+
+  .hero__content,
+  .where__content {
+    padding-right: 0;
+  }
+
+  .hero__content h1 {
+    font-size: 76px;
+  }
+
+  .where__content,
+  .tour__content,
+  .faq__img {
+    padding-top: 50px;
+  }
+
+  .where__tabs {
+    text-align: center;
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
 }
 
 /* Min Width 300px and Max Width 768px */
 
 @media (min-width: 300px) and (max-width: 768px) {
+  .hero__wrapper {
+    padding: 100px 0 40px;
+    background-position: center;
+  }
+
+  .hero__content,
+  .where__content {
+    padding-right: 0;
+  }
+
+  .hero__content h1 {
+    font-size: 100px;
+  }
+
+  .hero__buttons .primary-btn a,
+  .where__buttons .primary-btn a,
+  .tour__iternity__buttons .primary-btn a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .view_tour_guide_btn {
+    padding-left: 0;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .info__btn {
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .hero__video {
+    margin-bottom: 30px;
+  }
+
+  .hero__video iframe,
+  .about__video iframe {
+    min-height: 214px;
+    height: 214px;
+  }
+
+  .about__wrapper {
+    padding-top: 40px;
+  }
+
+  .about__icon {
+    text-align: center;
+  }
+
+  .about__content {
+    padding-top: 40px;
+  }
+
+  .about__video {
+    padding-top: 20px;
+  }
+
+  .where__wrapper {
+    padding-top: 60px;
+  }
+
+  .where__content p {
+    padding-top: 28px;
+  }
+
+  .where__tabs__buttons {
+    margin: 30px 0;
+  }
+
+  .where__img {
+    padding-right: 0;
+  }
+
+  .tour__itinerary__wrapper {
+    padding: 60px 0;
+  }
+
+  .tour-itinerary-img {
+    padding: 50px 0 20px;
+  }
+
+  .landscapes__wrapper {
+    padding: 50px 0;
+  }
+
+  .quote__icon::before,
+  .quote__icon::after {
+    width: 37%;
+  }
+
+  .faq__wrapper {
+    padding: 60px 0;
+  }
+
+  .book__tour__wrapper {
+    background: none;
+  }
+
+  .footer_wrapper {
+    padding: 0 0 50px;
+  }
+
+  .footer_wrapper .container-fluid {
+    padding: 0 20px;
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+  }
+
+  .footer__social {
+    padding-top: 20px;
+  }
+
+  .footer__social ul li i {
+    padding-left: 0;
+    padding-right: 28px;
+  }
 }
