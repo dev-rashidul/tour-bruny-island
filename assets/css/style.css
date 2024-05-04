@@ -292,10 +292,15 @@ span.sec__tag {
   font-weight: 700;
   text-decoration-line: underline;
   color: var(--white);
+  transition: all 0.3s ease-in-out;
 }
 
 .view_tour_guide_btn a img {
   margin-right: 10px;
+}
+
+.view_tour_guide_btn a:hover {
+  color: var(--primary);
 }
 
 .info__btn {
@@ -750,6 +755,11 @@ span.sec__tag {
 
 .footer__social ul li a {
   color: var(--black);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__social ul li a:hover {
+  color: var(--primary);
 }
 
 /* Footer Part CSS End */
