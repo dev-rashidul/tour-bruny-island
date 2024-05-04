@@ -453,4 +453,57 @@ span.sec__tag {
 
 /* Where Go Section CSS End */
 
+/* Tour Itinerary Section CSS Start */
+
+.tour__itinerary__wrapper {
+  background: var(--secondary);
+  padding: 80px 0;
+  margin-top: 70px;
+}
+
+.tour__itinerary__list ol li {
+  list-style: number;
+}
+
+.tour__content h2 {
+  font-family: "Playfair Display";
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 117%;
+  color: var(--white);
+  margin-bottom: 0;
+}
+
+.tour__content h2 span {
+  color: #9599a0;
+}
+
+.tour__itinerary__list {
+  padding: 20px 0 0 16px;
+}
+
+.tour__itinerary__list ol li {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 171.429%;
+  color: var(--white);
+  padding: 3px;
+}
+
+.tour__itinerary__list ol li span {
+  font-weight: 400;
+}
+
+.tour__iternity__buttons {
+  padding-top: 50px;
+}
+
+.tour__iternity__buttons .primary-btn a:hover {
+  color: var(--black);
+  background: var(--white);
+}
+
+/* Tour Itinerary Section CSS End */
+
 /* Main Part CSS End */
