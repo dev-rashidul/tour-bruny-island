@@ -5,6 +5,23 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("sticky", window.scrollY > 100);
 });
 
+// JavaScript For Sticky Mobile Header
+
+window.addEventListener("scroll", function () {
+  const header = document.querySelector(".mobile-navbar");
+  header.classList.toggle("sticky", window.scrollY > 100);
+});
+
+// JavaScript For Mobile Navbar
+
+const navbarToggler = document.querySelector(".navbar-toggler");
+const mobileNav = document.querySelector(".mobile__nav");
+
+navbarToggler.addEventListener("click", () => {
+  navbarToggler.classList.toggle("active");
+  mobileNav.classList.toggle("active");
+});
+
 // Landscapes Slider
 
 $(".landscapes__slider").owlCarousel({
@@ -13,7 +30,7 @@ $(".landscapes__slider").owlCarousel({
   nav: false,
   dots: true,
   autoplay: true,
-  autoplayTimeout: 2000,
+  autoplayTimeout: 3000,
   responsive: {
     0: {
       items: 1,
@@ -26,3 +43,9 @@ $(".landscapes__slider").owlCarousel({
     },
   },
 });
+
+
+// Tooltips Config
+
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))

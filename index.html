@@ -196,25 +196,13 @@
       <!-- Navigation Section HTML Start -->
 
       <section id="Header">
-        <nav class="navbar navbar-expand-xl">
+        <nav class="navbar navbar-expand-lg d-none d-lg-flex">
           <div class="container">
             <div class="logo">
               <a href="#">Explore <span>Bruny Island</span></a>
             </div>
-            <button
-              class="navbar-toggler collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="toggler-icon top-bar"></span>
-              <span class="toggler-icon middle-bar"></span>
-              <span class="toggler-icon bottom-bar"></span>
-            </button>
-            <div class="collapse navbar-collapse pt-xl-2" id="navbarNav">
+
+            <div class="pt-xl-2" id="navbarNav">
               <ul class="navbar-nav pl-md-5 ms-auto">
                 <li class="nav-item">
                   <a class="nav-link" href="#">Home</a>
@@ -242,6 +230,65 @@
 
       <!-- Navigation Section HTML End -->
 
+      <!-- Mobile Navigation Section HTML Start -->
+
+      <section id="Mobile-navigation">
+        <div class="mobile-navbar d-lg-none">
+          <div class="mobile__nav__container">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="logo">
+                <a href="#">Explore <span>Bruny Island</span></a>
+              </div>
+              <button class="navbar-toggler active" type="button">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+              </button>
+            </div>
+            <div class="mobile__nav">
+              <ul>
+                <li>
+                  <a href="#"
+                    >Home <span><i class="fa-solid fa-arrow-right"></i></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#About__tour"
+                    >About Tour
+                    <span><i class="fa-solid fa-arrow-right"></i></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#Where-go"
+                    >Places to see
+                    <span><i class="fa-solid fa-arrow-right"></i></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#Tour-itinerary"
+                    >Itineray
+                    <span><i class="fa-solid fa-arrow-right"></i></span
+                  ></a>
+                </li>
+              </ul>
+              <div class="mm__buttons">
+                <div class="primary-btn">
+                  <a href="#">Book Tour $149</a>
+                </div>
+                <div class="view_tour_guide_btn">
+                  <a href="#"
+                    ><img src="assets/images/pdf-icon.svg" alt="pdf-icon" />
+                    View tour guide
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mobile Navigation Section HTML End -->
+
       <!-- Hero Section HTML Start -->
 
       <section id="Hero">
@@ -266,10 +313,13 @@
                   </p>
                   <div class="hero__buttons d-none d-md-flex">
                     <div class="primary-btn">
-                      <a href="#">Book Tour $149</a>
+                      <a
+                        href="https://6809d6-3f.myshopify.com/products/explore-bruny-island-tours"
+                        >Book Tour $149</a
+                      >
                     </div>
                     <div class="view_tour_guide_btn">
-                      <a href="#"
+                      <a href="tour-guide.html"
                         ><img src="assets/images/pdf-icon.svg" alt="pdf-icon" />
                         View tour guide
                       </a>
@@ -281,7 +331,13 @@
                         src="assets/images/check-icon.svg"
                         alt="check-icon"
                       />
-                      <span> Recommended by 97% of travellers </span>
+                      <span
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        data-bs-title="Legal Disclaimer: Based on internal survey data. Individual experiences may vary."
+                      >
+                        Recommended by 97% of travellers
+                      </span>
                       <img src="assets/images/info-icon.svg" alt="info-icon" />
                     </p>
                   </div>
@@ -294,22 +350,35 @@
                     A Journey of Taste and Tranquility
                   </h6>
                   <div class="hero__video">
-                    <iframe
-                      src="https://www.youtube.com/embed/lS4LmAidF3I?si=hfTYqHLHdkE-IlVp"
-                      title="YouTube video player"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerpolicy="strict-origin-when-cross-origin"
-                      allowfullscreen
-                    ></iframe>
+                    <div class="videoCoverImage">
+                      <div
+                        onclick="thevid=document.getElementById('theHerovideo'); thevid.style.display='block'; this.style.display='none'"
+                      >
+                        <img
+                          class="thumb"
+                          style="cursor: pointer"
+                          src="assets/images/hero-video-thumnail.webp"
+                          alt="Hero Video Thumnail"
+                        />
+                      </div>
+                      <div id="theHerovideo" style="display: none">
+                        <iframe
+                          src="https://www.youtube.com/embed/lS4LmAidF3I?rel=0;&autoplay=1&mute=1&loop=1"
+                        ></iframe>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="hero__buttons d-md-none">
                 <div class="primary-btn">
-                  <a href="#">Book Tour $149</a>
+                  <a
+                    href="https://6809d6-3f.myshopify.com/products/explore-bruny-island-tours"
+                    >Book Tour $149</a
+                  >
                 </div>
                 <div class="view_tour_guide_btn">
-                  <a href="#"
+                  <a href="tour-guide.html"
                     ><img src="assets/images/pdf-icon.svg" alt="pdf-icon" />
                     View tour guide
                   </a>
@@ -318,7 +387,13 @@
               <div class="info__btn d-md-none">
                 <p>
                   <img src="assets/images/check-icon.svg" alt="check-icon" />
-                  <span> Recommended by 97% of travellers </span>
+                  <span
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    data-bs-title="Legal Disclaimer: Based on internal survey data. Individual experiences may vary."
+                  >
+                    Recommended by 97% of travellers
+                  </span>
                   <img src="assets/images/info-icon.svg" alt="info-icon" />
                 </p>
               </div>
@@ -391,25 +466,19 @@
             </div>
             <div class="island__info__wrapper">
               <div class="row">
-                <div class="col-4 col-lg-3">
+                <div class="col-4">
                   <div class="info__card">
                     <h2>50</h2>
                     <p>beaches</p>
                   </div>
                 </div>
-                <div class="col-4 col-lg-3">
-                  <div class="info__card">
-                    <h2>36</h2>
-                    <p>Waterfalls</p>
-                  </div>
-                </div>
-                <div class="col-4 col-lg-3">
+                <div class="col-4">
                   <div class="info__card">
                     <h2>362</h2>
-                    <p>square kilometers</p>
+                    <p>square kms</p>
                   </div>
                 </div>
-                <div class="col-4 col-lg-3 d-none d-lg-block">
+                <div class="col-4">
                   <div class="info__card">
                     <h2>100</h2>
                     <p>white wallabies</p>
@@ -418,13 +487,23 @@
               </div>
             </div>
             <div class="about__video">
-              <iframe
-                src="https://www.youtube.com/embed/lS4LmAidF3I?si=hfTYqHLHdkE-IlVp"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
+              <div class="videoCoverImage">
+                <div
+                  onclick="thevid=document.getElementById('thevideo'); thevid.style.display='block'; this.style.display='none'"
+                >
+                  <img
+                    class="thumb"
+                    style="cursor: pointer"
+                    src="assets/images/about-video-thumbnail.webp"
+                    alt="About Video thumbnail"
+                  />
+                </div>
+                <div id="thevideo" style="display: none">
+                  <iframe
+                    src="https://www.youtube.com/embed/lS4LmAidF3I?rel=0;&autoplay=1&mute=1&loop=1"
+                  ></iframe>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -450,7 +529,807 @@
                 delightful lunch.
               </p>
             </div>
-            <div class="where__tabs">
+            <div class="where__accordion d-lg-none">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-wg-collapseOne"
+                      aria-expanded="false"
+                      aria-controls="flush-wg-collapseOne"
+                    >
+                      Sealink Ferry
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-wg-collapseOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="row align-items-center">
+                        <div class="col-lg-6">
+                          <div class="where__content">
+                            <span>Bruny Island</span>
+                            <div class="section-title">
+                              <h2>Sealink Ferry</h2>
+                            </div>
+                            <h6>Stop: 30 minutes</h6>
+
+                            <div class="where__img">
+                              <img
+                                class="d-md-none"
+                                src="assets/images/sealink-ferry-img-mobile.webp"
+                                alt="sealink-ferry-img-mobile"
+                              />
+                            </div>
+                            <p>
+                              With excitement bubbling in the air, we board the
+                              Bruny Island Ferry, setting sail across shimmering
+                              waters. For 30 mesmerising minutes, you'll be
+                              treated to breathtaking views as we glide towards
+                              our island destination. The ferry ride itself is
+                              an experience to cherish, included in your tour
+                              package for seamless enjoyment.
+                            </p>
+                            <div class="tour__tag">
+                              <span
+                                ><img
+                                  src="assets/images/car-icon.svg"
+                                  alt="Car Icon"
+                                />
+                                Ferry included in tour</span
+                              >
+                            </div>
+                            <div class="where__buttons d-md-flex">
+                              <div class="primary-btn">
+                                <a
+                                  href="https://6809d6-3f.myshopify.com/products/explore-bruny-island-tours"
+                                  >Book Tour $149</a
+                                >
+                              </div>
+                              <div class="view_tour_guide_btn">
+                                <a href="tour-guide.html"
+                                  ><img
+                                    src="assets/images/pdf-icon.svg"
+                                    alt="pdf-icon"
+                                  />
+                                  View tour guide
+                                </a>
+                              </div>
+                            </div>
+                            <div class="info__btn">
+                              <p>
+                                <img
+                                  src="assets/images/check-icon.svg"
+                                  alt="check-icon"
+                                />
+                                <span
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="top"
+                                  data-bs-title="Legal Disclaimer: Based on internal survey data. Individual experiences may vary."
+                                >
+                                  Recommended by 97% of travellers
+                                </span>
+                                <img
+                                  src="assets/images/info-icon-dark.svg"
+                                  alt="info-icon-dark"
+                                />
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-wg-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="flush-wg-collapseTwo"
+                    >
+                      Food Producers
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-wg-collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="row align-items-center">
+                        <div class="col-lg-6"></div>
+                        <div class="col-lg-6">
+                          <div class="where__content">
+                            <span>Bruny Island</span>
+                            <div class="section-title">
+                              <h2>Food Producers</h2>
+                            </div>
+                            <h6>Stop: 1 hour 30 minutes</h6>
+                            <div class="where__img float-lg-end">
+                              <img
+                                src="assets/images/food-producers-img-mobile.webp"
+                                alt="Food Producers"
+                              />
+                            </div>
+                            <p>
+                              Upon arrival at Bruny Island, indulge in fresh
+                              oysters at
+                              <a href="https://www.getshucked.com.au"
+                                >Get Shucked Oyster Bar</a
+                              >. Then, savour
+                              <a
+                                href="https://thehoney-pot.com/bruny-island-honey"
+                                >Bruny Island Honey</a
+                              >
+                              and chocolates
+                              <a
+                                href="https://www.brunyisland.com/catalogue/chocolate"
+                                >Chocolate Company</a
+                              >. Finally, enjoy artisanal cheeses at
+                              <a href="https://www.brunyislandcheese.com.au"
+                                >Bruny Island Cheese Company</a
+                              >
+                              amidst picturesque surroundings.
+                            </p>
+                            <div class="tour__tag">
+                              <span
+                                ><img
+                                  src="assets/images/spoon-icon.svg"
+                                  alt="Spoon Icon"
+                                />
+                                Buy Honey, Oyster, Cheese, chocolates</span
+                              >
+                              <br />
+                              <span class="d-block pt-3"
+                                ><img
+                                  src="assets/images/car-icon.svg"
+                                  alt="Car Icon"
+                                />
+                                Drive to locations</span
+                              >
+                            </div>
+                            <div class="where__buttons d-md-flex">
+                              <div class="primary-btn">
+                                <a
+                                  href="https://6809d6-3f.myshopify.com/products/explore-bruny-island-tours"
+                                  >Book Tour $149</a
+                                >
+                              </div>
+                              <div class="view_tour_guide_btn">
+                                <a href="tour-guide.html"
+                                  ><img
+                                    src="assets/images/pdf-icon.svg"
+                                    alt="pdf-icon"
+                                  />
+                                  View tour guide
+                                </a>
+                              </div>
+                            </div>
+                            <div class="info__btn">
+                              <p>
+                                <img
+                                  src="assets/images/check-icon.svg"
+                                  alt="check-icon"
+                                />
+                                <span
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="top"
+                                  data-bs-title="Legal Disclaimer: Based on internal survey data. Individual experiences may vary."
+                                >
+                                  Recommended by 97% of travellers
+                                </span>
+                                <img
+                                  src="assets/images/info-icon-dark.svg"
+                                  alt="info-icon-dark"
+                                />
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-wg-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="flush-wg-collapseThree"
+                    >
+                      The Neck
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-wg-collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="row align-items-center">
+                        <div class="col-lg-6">
+                          <div class="where__content">
+                            <span>Bruny Island</span>
+                            <div class="section-title">
+                              <h2>The Neck</h2>
+                            </div>
+                            <h6>Stop: 30 minutes</h6>
+                            <div class="where__img float-lg-end">
+                              <img
+                                src="assets/images/the-neck-img-mobile.webp"
+                                alt="The Neck"
+                              />
+                            </div>
+                            <p>
+                              Bruny Island Neck links the island's northern and
+                              southern parts in southern Tasmania, offering
+                              stunning views. We take a moment to breathe in the
+                              fresh sea air, relishing panoramic views that
+                              stretch as far as the eye can see. A 30-minute
+                              stop allows for a leisurely morning tea style
+                              amidst nature's splendour
+                            </p>
+                            <div class="tour__tag">
+                              <span
+                                ><img
+                                  src="assets/images/spoon-icon.svg"
+                                  alt="Spoon Icon"
+                                />
+                                Lunch included</span
+                              >
+                              <br />
+                              <span class="d-block pt-3"
+                                ><img
+                                  src="assets/images/car-icon.svg"
+                                  alt="Car Icon"
+                                />
+                                Transfer & ferry included</span
+                              >
+                            </div>
+                            <div class="where__buttons d-md-flex">
+                              <div class="primary-btn">
+                                <a
+                                  href="https://6809d6-3f.myshopify.com/products/explore-bruny-island-tours"
+                                  >Book Tour $149</a
+                                >
+                              </div>
+                              <div class="view_tour_guide_btn">
+                                <a href="tour-guide.html"
+                                  ><img
+                                    src="assets/images/pdf-icon.svg"
+                                    alt="pdf-icon"
+                                  />
+                                  View tour guide
+                                </a>
+                              </div>
+                            </div>
+                            <div class="info__btn">
+                              <p>
+                                <img
+                                  src="assets/images/check-icon.svg"
+                                  alt="check-icon"
+                                />
+                                <span
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="top"
+                                  data-bs-title="Legal Disclaimer: Based on internal survey data. Individual experiences may vary."
+                                >
+                                  Recommended by 97% of travellers
+                                </span>
+                                <img
+                                  src="assets/images/info-icon-dark.svg"
+                                  alt="info-icon-dark"
+                                />
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-wg-collapseFour"
+                      aria-expanded="false"
+                      aria-controls="flush-wg-collapseFour"
+                    >
+                      The Bruny Baker
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-wg-collapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="row align-items-center">
+                        <div class="col-lg-6">
+                          <div class="where__content">
+                            <span>Bruny Island</span>
+                            <div class="section-title">
+                              <h2>The Bruny Baker</h2>
+                            </div>
+                            <h6>Stop: 30 minutes</h6>
+                            <div class="where__img float-lg-end">
+                              <img
+                                src="assets/images/bruny-fridge-img-mobile.webp"
+                                alt="The Bruny Baker"
+                              />
+                            </div>
+                            <p>
+                              Nestled by the roadside, the Bruny Baker is a
+                              charming stop. Every 4 hours the vintage fridge is
+                              stocked with mouthwatering sourdough and
+                              cookies.The unique honesty system adds to its
+                              charm – customers pay via bank details or cash in
+                              a locked slot. The Bruny Baker continues to
+                              captivate visitors, its rustic charm and delicious
+                              treats making it a beloved spot on the island.
+                            </p>
+                            <div class="tour__tag">
+                              <span
+                                ><img
+                                  src="assets/images/spoon-icon.svg"
+                                  alt="Spoon Icon"
+                                />
+                                Lunch included</span
+                              >
+                              <br />
+                              <span class="d-block pt-3"
+                                ><img
+                                  src="assets/images/car-icon.svg"
+                                  alt="Car Icon"
+                                />
+                                Transfer & ferry included</span
+                              >
+                            </div>
+                            <div class="where__buttons d-md-flex">
+                              <div class="primary-btn">
+                                <a
+                                  href="https://6809d6-3f.myshopify.com/products/explore-bruny-island-tours"
+                                  >Book Tour $149</a
+                                >
+                              </div>
+                              <div class="view_tour_guide_btn">
+                                <a href="tour-guide.html"
+                                  ><img
+                                    src="assets/images/pdf-icon.svg"
+                                    alt="pdf-icon"
+                                  />
+                                  View tour guide
+                                </a>
+                              </div>
+                            </div>
+                            <div class="info__btn">
+                              <p>
+                                <img
+                                  src="assets/images/check-icon.svg"
+                                  alt="check-icon"
+                                />
+                                <span
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="top"
+                                  data-bs-title="Legal Disclaimer: Based on internal survey data. Individual experiences may vary."
+                                >
+                                  Recommended by 97% of travellers
+                                </span>
+                                <img
+                                  src="assets/images/info-icon-dark.svg"
+                                  alt="info-icon-dark"
+                                />
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-wg-collapseFive"
+                      aria-expanded="false"
+                      aria-controls="flush-wg-collapseFive"
+                    >
+                      National Park
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-wg-collapseFive"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="row align-items-center">
+                        <div class="col-lg-6">
+                          <div class="where__content">
+                            <span>Bruny Island</span>
+                            <div class="section-title">
+                              <h2>National Park</h2>
+                            </div>
+                            <h6>Stop: 1 hour</h6>
+                            <div class="where__img float-lg-end">
+                              <img
+                                src="assets/images/national-park-img-mobile.webp"
+                                alt="National Park"
+                              />
+                            </div>
+                            <p>
+                              Continuing our exploration, we delve into the
+                              enchanting realm of South Bruny National Park. For
+                              60 blissful minutes, lose yourself amidst towering
+                              trees, pristine beaches, and rugged cliffs.
+                              Admission excluded, but the experience priceless
+                              as you connect with the raw beauty of Tasmania's
+                              wilderness.
+                            </p>
+                            <div class="tour__tag">
+                              <span
+                                ><img
+                                  src="assets/images/spoon-icon.svg"
+                                  alt="Spoon Icon"
+                                />
+                                Lunch included</span
+                              >
+                              <br />
+                              <span class="d-block pt-3"
+                                ><img
+                                  src="assets/images/car-icon.svg"
+                                  alt="Car Icon"
+                                />
+                                Transfer & ferry included</span
+                              >
+                            </div>
+                            <div class="where__buttons d-md-flex">
+                              <div class="primary-btn">
+                                <a
+                                  href="https://6809d6-3f.myshopify.com/products/explore-bruny-island-tours"
+                                  >Book Tour $149</a
+                                >
+                              </div>
+                              <div class="view_tour_guide_btn">
+                                <a href="tour-guide.html"
+                                  ><img
+                                    src="assets/images/pdf-icon.svg"
+                                    alt="pdf-icon"
+                                  />
+                                  View tour guide
+                                </a>
+                              </div>
+                            </div>
+                            <div class="info__btn">
+                              <p>
+                                <img
+                                  src="assets/images/check-icon.svg"
+                                  alt="check-icon"
+                                />
+                                <span
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="top"
+                                  data-bs-title="Legal Disclaimer: Based on internal survey data. Individual experiences may vary."
+                                >
+                                  Recommended by 97% of travellers
+                                </span>
+                                <img
+                                  src="assets/images/info-icon-dark.svg"
+                                  alt="info-icon-dark"
+                                />
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-wg-collapseSix"
+                      aria-expanded="false"
+                      aria-controls="flush-wg-collapseSix"
+                    >
+                      Cape Bruny Lighthouse
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-wg-collapseSix"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="row align-items-center">
+                        <div class="col-lg-6">
+                          <div class="where__content">
+                            <span>Bruny Island</span>
+                            <div class="section-title">
+                              <h2>
+                                Cape Bruny <br />
+                                Lighthouse
+                              </h2>
+                            </div>
+                            <h6>Stop: 30 mins</h6>
+                            <div class="where__img float-lg-end">
+                              <img
+                                src="assets/images/cape-lighthouse-img-mobile.webp"
+                                alt="Cape Bruny Lighthouse"
+                              />
+                            </div>
+                            <p>
+                              Our journey takes a historical turn as we visit
+                              Cape Bruny Lighthouse, a beacon of maritime
+                              history. Step back in time with a 30 minutes
+                              guided tour, included in your tour package, as you
+                              ascend the lighthouse tower and hear tales of
+                              seafaring adventures. The Cape Bruny Lighthouse,
+                              dating back to 1836, stands 114 meters tall atop
+                              the dramatic cliffs.
+                            </p>
+                            <div class="tour__tag">
+                              <span class="d-block pt-3"
+                                ><img
+                                  src="assets/images/car-icon.svg"
+                                  alt="Car Icon"
+                                />
+                                Tour included</span
+                              >
+                            </div>
+                            <div class="where__buttons d-md-flex">
+                              <div class="primary-btn">
+                                <a
+                                  href="https://6809d6-3f.myshopify.com/products/explore-bruny-island-tours"
+                                  >Book Tour $149</a
+                                >
+                              </div>
+                              <div class="view_tour_guide_btn">
+                                <a href="tour-guide.html"
+                                  ><img
+                                    src="assets/images/pdf-icon.svg"
+                                    alt="pdf-icon"
+                                  />
+                                  View tour guide
+                                </a>
+                              </div>
+                            </div>
+                            <div class="info__btn">
+                              <p>
+                                <img
+                                  src="assets/images/check-icon.svg"
+                                  alt="check-icon"
+                                />
+                                <span
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="top"
+                                  data-bs-title="Legal Disclaimer: Based on internal survey data. Individual experiences may vary."
+                                >
+                                  Recommended by 97% of travellers
+                                </span>
+                                <img
+                                  src="assets/images/info-icon-dark.svg"
+                                  alt="info-icon-dark"
+                                />
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-wg-collapseSeven"
+                      aria-expanded="false"
+                      aria-controls="flush-wg-collapseSeven"
+                    >
+                      Hotel Bruny
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-wg-collapseSeven"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="row align-items-center">
+                        <div class="col-lg-6">
+                          <div class="where__content">
+                            <span>Bruny Island</span>
+                            <div class="section-title">
+                              <h2>Hotel Bruny</h2>
+                            </div>
+                            <h6>Stop: 1 hour</h6>
+                            <div class="where__img float-lg-end">
+                              <img
+                                src="assets/images/hotel-bruny-img.webp"
+                                alt="Hotel Bruny"
+                              />
+                            </div>
+                            <p>
+                              Midday approaches, and it's time to recharge at
+                              Hotel Bruny. Hotel Bruny serves up delicious
+                              seafood and pub classics crafted from locally
+                              sourced premium ingredients. Guests are treated to
+                              breathtaking views of the channel and Satellite
+                              Island, Relax in comfort and relive the morning's
+                              adventures over a delicious meal or refreshing
+                              beverage.
+                            </p>
+                            <div class="tour__tag">
+                              <span
+                                ><img
+                                  src="assets/images/spoon-icon.svg"
+                                  alt="Spoon Icon"
+                                />
+                                Seafood and Beverages</span
+                              >
+                              <br />
+                              <span class="d-block pt-3"
+                                ><img
+                                  src="assets/images/car-icon.svg"
+                                  alt="Car Icon"
+                                />
+                                Drive to locations</span
+                              >
+                            </div>
+                            <div class="where__buttons d-md-flex">
+                              <div class="primary-btn">
+                                <a
+                                  href="https://6809d6-3f.myshopify.com/products/explore-bruny-island-tours"
+                                  >Book Tour $149</a
+                                >
+                              </div>
+                              <div class="view_tour_guide_btn">
+                                <a href="tour-guide.html"
+                                  ><img
+                                    src="assets/images/pdf-icon.svg"
+                                    alt="pdf-icon"
+                                  />
+                                  View tour guide
+                                </a>
+                              </div>
+                            </div>
+                            <div class="info__btn">
+                              <p>
+                                <img
+                                  src="assets/images/check-icon.svg"
+                                  alt="check-icon"
+                                />
+                                <span> Recommended by 97% of travellers </span>
+                                <img
+                                  src="assets/images/info-icon-dark.svg"
+                                  alt="info-icon-dark"
+                                />
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-wg-collapseEight"
+                      aria-expanded="false"
+                      aria-controls="flush-wg-collapseEight"
+                    >
+                      Adventure Bay
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-wg-collapseEight"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="row align-items-center">
+                        <div class="col-lg-6">
+                          <div class="where__content">
+                            <span>Bruny Island</span>
+                            <div class="section-title">
+                              <h2>Adventure Bay</h2>
+                            </div>
+                            <h6>Stop: 45 mins</h6>
+                            <div class="where__img float-lg-end">
+                              <img
+                                src="assets/images/adventure-bay-img-mobile.webp"
+                                alt="Adventure Bay"
+                              />
+                            </div>
+                            <p>
+                              Revitalised and ready for more, we venture to
+                              Adventure Bay, a haven of natural wonders. Spend
+                              45 minutes exploring secluded coves, pristine
+                              beaches, and tranquil forests, each corner
+                              revealing a new facet of Bruny Island's charm.
+                            </p>
+                            <div class="tour__tag">
+                              <span class="d-block pt-3"
+                                ><img
+                                  src="assets/images/car-icon.svg"
+                                  alt="Car Icon"
+                                />
+                                Drive to locations</span
+                              >
+                            </div>
+                            <div class="where__buttons d-md-flex">
+                              <div class="primary-btn">
+                                <a
+                                  href="https://6809d6-3f.myshopify.com/products/explore-bruny-island-tours"
+                                  >Book Tour $149</a
+                                >
+                              </div>
+                              <div class="view_tour_guide_btn">
+                                <a href="tour-guide.html"
+                                  ><img
+                                    src="assets/images/pdf-icon.svg"
+                                    alt="pdf-icon"
+                                  />
+                                  View tour guide
+                                </a>
+                              </div>
+                            </div>
+                            <div class="info__btn">
+                              <p>
+                                <img
+                                  src="assets/images/check-icon.svg"
+                                  alt="check-icon"
+                                />
+                                <span
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="top"
+                                  data-bs-title="Legal Disclaimer: Based on internal survey data. Individual experiences may vary."
+                                >
+                                  Recommended by 97% of travellers
+                                </span>
+                                <img
+                                  src="assets/images/info-icon-dark.svg"
+                                  alt="info-icon-dark"
+                                />
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="where__tabs d-none d-lg-block">
               <div class="where__tabs__buttons">
                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                   <li class="nav-item" role="presentation">
@@ -620,10 +1499,13 @@
                         </div>
                         <div class="where__buttons d-md-flex">
                           <div class="primary-btn">
-                            <a href="#">Book Tour $149</a>
+                            <a
+                              href="https://6809d6-3f.myshopify.com/products/explore-bruny-island-tours"
+                              >Book Tour $149</a
+                            >
                           </div>
                           <div class="view_tour_guide_btn">
-                            <a href="#"
+                            <a href="tour-guide.html"
                               ><img
                                 src="assets/images/pdf-icon.svg"
                                 alt="pdf-icon"
@@ -638,7 +1520,13 @@
                               src="assets/images/check-icon.svg"
                               alt="check-icon"
                             />
-                            <span> Recommended by 97% of travellers </span>
+                            <span
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              data-bs-title="Legal Disclaimer: Based on internal survey data. Individual experiences may vary."
+                            >
+                              Recommended by 97% of travellers
+                            </span>
                             <img
                               src="assets/images/info-icon-dark.svg"
                               alt="info-icon-dark"
@@ -674,11 +1562,21 @@
                         <h6>Stop: 1 hour 30 minutes</h6>
                         <p>
                           Upon arrival at Bruny Island, indulge in fresh oysters
-                          at <a href="#">Get Shucked Oyster Bar</a>. Then,
-                          savour <a href="#">Bruny Island Honey</a> and
-                          chocolates <a href="#">Chocolate Company</a>. Finally,
-                          enjoy artisanal cheeses at
-                          <a href="#">Bruny Island Cheese Company</a>
+                          at
+                          <a href="https://www.getshucked.com.au"
+                            >Get Shucked Oyster Bar</a
+                          >. Then, savour
+                          <a href="https://thehoney-pot.com/bruny-island-honey"
+                            >Bruny Island Honey</a
+                          >
+                          and chocolates
+                          <a
+                            href="https://www.brunyisland.com/catalogue/chocolate"
+                            >Chocolate Company</a
+                          >. Finally, enjoy artisanal cheeses at
+                          <a href="https://www.brunyislandcheese.com.au"
+                            >Bruny Island Cheese Company</a
+                          >
                           amidst picturesque surroundings.
                         </p>
                         <div class="tour__tag">
@@ -700,10 +1598,13 @@
                         </div>
                         <div class="where__buttons d-md-flex">
                           <div class="primary-btn">
-                            <a href="#">Book Tour $149</a>
+                            <a
+                              href="https://6809d6-3f.myshopify.com/products/explore-bruny-island-tours"
+                              >Book Tour $149</a
+                            >
                           </div>
                           <div class="view_tour_guide_btn">
-                            <a href="#"
+                            <a href="tour-guide.html"
                               ><img
                                 src="assets/images/pdf-icon.svg"
                                 alt="pdf-icon"
@@ -718,7 +1619,13 @@
                               src="assets/images/check-icon.svg"
                               alt="check-icon"
                             />
-                            <span> Recommended by 97% of travellers </span>
+                            <span
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              data-bs-title="Legal Disclaimer: Based on internal survey data. Individual experiences may vary."
+                            >
+                              Recommended by 97% of travellers
+                            </span>
                             <img
                               src="assets/images/info-icon-dark.svg"
                               alt="info-icon-dark"
@@ -779,10 +1686,13 @@
                         </div>
                         <div class="where__buttons d-md-flex">
                           <div class="primary-btn">
-                            <a href="#">Book Tour $149</a>
+                            <a
+                              href="https://6809d6-3f.myshopify.com/products/explore-bruny-island-tours"
+                              >Book Tour $149</a
+                            >
                           </div>
                           <div class="view_tour_guide_btn">
-                            <a href="#"
+                            <a href="tour-guide.html"
                               ><img
                                 src="assets/images/pdf-icon.svg"
                                 alt="pdf-icon"
@@ -797,7 +1707,13 @@
                               src="assets/images/check-icon.svg"
                               alt="check-icon"
                             />
-                            <span> Recommended by 97% of travellers </span>
+                            <span
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              data-bs-title="Legal Disclaimer: Based on internal survey data. Individual experiences may vary."
+                            >
+                              Recommended by 97% of travellers
+                            </span>
                             <img
                               src="assets/images/info-icon-dark.svg"
                               alt="info-icon-dark"
@@ -860,10 +1776,13 @@
                         </div>
                         <div class="where__buttons d-md-flex">
                           <div class="primary-btn">
-                            <a href="#">Book Tour $149</a>
+                            <a
+                              href="https://6809d6-3f.myshopify.com/products/explore-bruny-island-tours"
+                              >Book Tour $149</a
+                            >
                           </div>
                           <div class="view_tour_guide_btn">
-                            <a href="#"
+                            <a href="tour-guide.html"
                               ><img
                                 src="assets/images/pdf-icon.svg"
                                 alt="pdf-icon"
@@ -878,7 +1797,13 @@
                               src="assets/images/check-icon.svg"
                               alt="check-icon"
                             />
-                            <span> Recommended by 97% of travellers </span>
+                            <span
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              data-bs-title="Legal Disclaimer: Based on internal survey data. Individual experiences may vary."
+                            >
+                              Recommended by 97% of travellers
+                            </span>
                             <img
                               src="assets/images/info-icon-dark.svg"
                               alt="info-icon-dark"
@@ -939,10 +1864,13 @@
                         </div>
                         <div class="where__buttons d-md-flex">
                           <div class="primary-btn">
-                            <a href="#">Book Tour $149</a>
+                            <a
+                              href="https://6809d6-3f.myshopify.com/products/explore-bruny-island-tours"
+                              >Book Tour $149</a
+                            >
                           </div>
                           <div class="view_tour_guide_btn">
-                            <a href="#"
+                            <a href="tour-guide.html"
                               ><img
                                 src="assets/images/pdf-icon.svg"
                                 alt="pdf-icon"
@@ -957,7 +1885,13 @@
                               src="assets/images/check-icon.svg"
                               alt="check-icon"
                             />
-                            <span> Recommended by 97% of travellers </span>
+                            <span
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              data-bs-title="Legal Disclaimer: Based on internal survey data. Individual experiences may vary."
+                            >
+                              Recommended by 97% of travellers
+                            </span>
                             <img
                               src="assets/images/info-icon-dark.svg"
                               alt="info-icon-dark"
@@ -1014,10 +1948,13 @@
                         </div>
                         <div class="where__buttons d-md-flex">
                           <div class="primary-btn">
-                            <a href="#">Book Tour $149</a>
+                            <a
+                              href="https://6809d6-3f.myshopify.com/products/explore-bruny-island-tours"
+                              >Book Tour $149</a
+                            >
                           </div>
                           <div class="view_tour_guide_btn">
-                            <a href="#"
+                            <a href="tour-guide.html"
                               ><img
                                 src="assets/images/pdf-icon.svg"
                                 alt="pdf-icon"
@@ -1032,7 +1969,13 @@
                               src="assets/images/check-icon.svg"
                               alt="check-icon"
                             />
-                            <span> Recommended by 97% of travellers </span>
+                            <span
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              data-bs-title="Legal Disclaimer: Based on internal survey data. Individual experiences may vary."
+                            >
+                              Recommended by 97% of travellers
+                            </span>
                             <img
                               src="assets/images/info-icon-dark.svg"
                               alt="info-icon-dark"
@@ -1094,10 +2037,13 @@
                         </div>
                         <div class="where__buttons d-md-flex">
                           <div class="primary-btn">
-                            <a href="#">Book Tour $149</a>
+                            <a
+                              href="https://6809d6-3f.myshopify.com/products/explore-bruny-island-tours"
+                              >Book Tour $149</a
+                            >
                           </div>
                           <div class="view_tour_guide_btn">
-                            <a href="#"
+                            <a href="tour-guide.html"
                               ><img
                                 src="assets/images/pdf-icon.svg"
                                 alt="pdf-icon"
@@ -1112,7 +2058,13 @@
                               src="assets/images/check-icon.svg"
                               alt="check-icon"
                             />
-                            <span> Recommended by 97% of travellers </span>
+                            <span
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              data-bs-title="Legal Disclaimer: Based on internal survey data. Individual experiences may vary."
+                            >
+                              Recommended by 97% of travellers
+                            </span>
                             <img
                               src="assets/images/info-icon-dark.svg"
                               alt="info-icon-dark"
@@ -1164,10 +2116,13 @@
                         </div>
                         <div class="where__buttons d-md-flex">
                           <div class="primary-btn">
-                            <a href="#">Book Tour $149</a>
+                            <a
+                              href="https://6809d6-3f.myshopify.com/products/explore-bruny-island-tours"
+                              >Book Tour $149</a
+                            >
                           </div>
                           <div class="view_tour_guide_btn">
-                            <a href="#"
+                            <a href="tour-guide.html"
                               ><img
                                 src="assets/images/pdf-icon.svg"
                                 alt="pdf-icon"
@@ -1182,7 +2137,13 @@
                               src="assets/images/check-icon.svg"
                               alt="check-icon"
                             />
-                            <span> Recommended by 97% of travellers </span>
+                            <span
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              data-bs-title="Legal Disclaimer: Based on internal survey data. Individual experiences may vary."
+                            >
+                              Recommended by 97% of travellers
+                            </span>
                             <img
                               src="assets/images/info-icon-dark.svg"
                               alt="info-icon-dark"
@@ -1265,10 +2226,13 @@
                   </div>
                   <div class="tour__iternity__buttons d-md-flex">
                     <div class="primary-btn">
-                      <a href="#">Book Tour $149</a>
+                      <a
+                        href="https://6809d6-3f.myshopify.com/products/explore-bruny-island-tours"
+                        >Book Tour $149</a
+                      >
                     </div>
                     <div class="view_tour_guide_btn">
-                      <a href="#"
+                      <a href="tour-guide.html"
                         ><img src="assets/images/pdf-icon.svg" alt="pdf-icon" />
                         View tour guide
                       </a>
@@ -1280,7 +2244,13 @@
                         src="assets/images/check-icon.svg"
                         alt="check-icon"
                       />
-                      <span> Recommended by 97% of travellers </span>
+                      <span
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        data-bs-title="Legal Disclaimer: Based on internal survey data. Individual experiences may vary."
+                      >
+                        Recommended by 97% of travellers
+                      </span>
                       <img src="assets/images/info-icon.svg" alt="info-icon" />
                     </p>
                   </div>
@@ -1397,7 +2367,7 @@
                   <div class="faq__accordion">
                     <div
                       class="accordion accordion-flush"
-                      id="accordionFlushExample"
+                      id="accordionFlushExample2"
                     >
                       <div class="accordion-item">
                         <h2 class="accordion-header">
@@ -1547,10 +2517,13 @@
                   </div>
                   <div class="tour__iternity__buttons d-md-flex">
                     <div class="primary-btn">
-                      <a href="#">Book Tour $149</a>
+                      <a
+                        href="https://6809d6-3f.myshopify.com/products/explore-bruny-island-tours"
+                        >Book Tour $149</a
+                      >
                     </div>
                     <div class="view_tour_guide_btn">
-                      <a href="#"
+                      <a href="tour-guide.html"
                         ><img src="assets/images/pdf-icon.svg" alt="pdf-icon" />
                         View tour guide
                       </a>
@@ -1562,7 +2535,13 @@
                         src="assets/images/check-icon.svg"
                         alt="check-icon"
                       />
-                      <span> Recommended by 97% of travellers </span>
+                      <span
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        data-bs-title="Legal Disclaimer: Based on internal survey data. Individual experiences may vary."
+                      >
+                        Recommended by 97% of travellers
+                      </span>
                       <img src="assets/images/info-icon.svg" alt="info-icon" />
                     </p>
                   </div>
@@ -1579,25 +2558,6 @@
       </section>
 
       <!-- FAQ Section HTML End -->
-
-      <!-- Book Tour Section HTML Start -->
-
-      <section id="Book-tour">
-        <div class="book__tour__wrapper">
-          <div class="container">
-            <div class="book__tour__container">
-              <div class="book__tour__calender">
-                <img
-                  src="assets/images/tour-calender-img.webp"
-                  alt="tour-calender-img"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Book Tour Section HTML End -->
     </main>
 
     <!-- Main Part HTML End -->
@@ -1618,14 +2578,19 @@
                   <a href="#Tour-itinerary">Tour Bruny Island Itinerary</a>
                 </li>
                 <li><a href="#Landscapes">Beautiful landscapes</a></li>
-                <li><a href="#">Tour Bruny Island FAQ’s</a></li>
-                <li><a href="#Book Tour Bruny Island  $149"></a></li>
+                <li><a href="#Faq">Tour Bruny Island FAQ’s</a></li>
+                <li>
+                  <a
+                    href="https://6809d6-3f.myshopify.com/products/explore-bruny-island-tours"
+                    >Book Tour Bruny Island $149</a
+                  >
+                </li>
               </ul>
             </div>
             <div class="footer__menu">
               <h6>Tour guides</h6>
               <ul class="footer__nav">
-                <li><a href="#Where-go">Tour Bruny Island </a></li>
+                <li><a href="#About__tour">Tour Bruny Island </a></li>
               </ul>
             </div>
             <div class="footer__menu">
@@ -1638,14 +2603,15 @@
               <h6>Contact us</h6>
               <ul class="footer__nav">
                 <li>
-                  <a href="mailto:info@tourbrunyisland.com.au"
-                    >info@tourbrunyisland.com.au</a
+                  <button
+                    onclick="window.open('mailto:info@explorebrunyisland.com.au?subject=sub&body=this is body')"
                   >
+                    info@explorebrunyisland.com.au
+                  </button>
                 </li>
                 <li>
                   <a
                     href="tel:+61488160069"
-                    alt="Call us to book and Explore Bruny Island tours"
                     title="Call us to book and Explore Bruny Island tours"
                     >0488 160 069</a
                   >
@@ -1656,10 +2622,10 @@
               <h6>Legal</h6>
               <ul class="footer__nav">
                 <li>
-                  <a href="#">Privacy Policy</a>
+                  <a href="privacy-policy.html">Privacy Policy</a>
                 </li>
                 <li>
-                  <a href="#">Terms & Conditions</a>
+                  <a href="terms-conditions.html">Terms & Conditions</a>
                 </li>
               </ul>
             </div>
@@ -1676,7 +2642,6 @@
                   <a
                     target="_blank"
                     href="https://www.instagram.com/excavatehobart/"
-                    alt="Excavation Contractor Hobart Instagram"
                     title="Excavation Contractor Hobart Instagram"
                     ><i class="fa-brands fa-square-instagram"></i
                   ></a>
@@ -1685,7 +2650,6 @@
                   <a
                     target="_blank"
                     href="https://twitter.com/excavatehobart/"
-                    alt="Excavation Contractor Hobart Twitter"
                     title="Excavation Contractor Hobart Twitte"
                     ><i class="fa-brands fa-twitter"></i>
                   </a>
@@ -1694,7 +2658,6 @@
                   <a
                     target="_blank"
                     href="https://www.facebook.com/excavatehobart/"
-                    alt="Excavation Contractor Hobart Facebook"
                     title="Excavation Contractor Hobart Facebook"
                     ><i class="fa-brands fa-facebook-f"></i
                   ></a>
@@ -1703,7 +2666,6 @@
                   <a
                     target="_blank"
                     href="https://www.pinterest.com.au/excavatehobart/"
-                    alt="Excavation Contractor Hobart Pinterest"
                     title="Excavation Contractor Hobart Pinterest"
                     ><i class="fa-brands fa fa-pinterest"></i
                   ></a>
@@ -1712,7 +2674,6 @@
                   <a
                     target="_blank"
                     href="https://www.youtube.com/@excavatehobart/"
-                    alt="Excavation Contractor Hobart Instagram YouTube"
                     title="Excavation Contractor Hobart Instagram YouTube"
                     ><i class="fa-brands fa fa-youtube"></i
                   ></a>
@@ -1721,7 +2682,6 @@
                   <a
                     target="_blank"
                     href="https://www.linkedin.com/company/excavatehobart/"
-                    alt="Excavation Contractor Hobart Instagram Linkedin"
                     title="Excavation Contractor Hobart Instagram Linkedin"
                     ><i class="fa-brands fa-linkedin"></i
                   ></a>

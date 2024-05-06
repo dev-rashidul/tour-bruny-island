@@ -36,6 +36,11 @@
     font-size: 76px;
   }
 
+  .about__video img,
+  .about__video iframe {
+    height: 450px !important;
+  }
+
   .where__content,
   .tour__content,
   .faq__img {
@@ -55,6 +60,19 @@
 /* Min Width 300px and Max Width 768px */
 
 @media (min-width: 300px) and (max-width: 768px) {
+  .mobile-navbar {
+    padding: 30px 20px;
+  }
+
+  .mobile__nav {
+    padding: 30px 20px;
+    margin-top: 20px;
+  }
+
+  .mm__buttons .primary-btn a {
+    width: 100%;
+  }
+
   .hero__wrapper {
     padding: 100px 0 40px;
     background-position: center;
@@ -84,7 +102,7 @@
   }
 
   .info__btn {
-    padding-top: 10px;
+    padding-top: 25px;
     text-align: center;
   }
 
@@ -92,10 +110,12 @@
     margin-bottom: 30px;
   }
 
+  .hero__video img,
   .hero__video iframe,
+  .about__video img,
   .about__video iframe {
-    min-height: 214px;
-    height: 214px;
+    min-height: 260px !important;
+    height: 260px !important;
   }
 
   .about__wrapper {
@@ -122,12 +142,29 @@
     padding-top: 28px;
   }
 
+  .where__accordion .col-lg-6 {
+    padding: 0;
+  }
+
+  .where__accordion .accordion-body {
+    padding: 0 15px;
+    margin-bottom: 20px;
+  }
+
+  .where__accordion .info__btn p {
+    padding: 0;
+  }
+
   .where__tabs__buttons {
     margin: 30px 0;
   }
 
   .where__img {
     padding-right: 0;
+  }
+
+  .where__img img {
+    width: 100%;
   }
 
   .tour__itinerary__wrapper {
@@ -156,7 +193,7 @@
   }
 
   .footer_wrapper {
-    padding: 0 0 50px;
+    padding: 30px 0 50px;
   }
 
   .footer_wrapper .container-fluid {
