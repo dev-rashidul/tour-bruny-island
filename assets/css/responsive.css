@@ -1,6 +1,10 @@
 /* Min Width 1201px and Max Width 1399400*/
 
 @media (min-width: 1201px) and (max-width: 1400px) {
+  .hero__content,
+  .where__content {
+    padding-right: 50px;
+  }
 }
 
 /* Min Width 993px and Max Width 1199200*/
@@ -74,7 +78,7 @@
   }
 
   .hero__wrapper {
-    padding: 100px 0 40px;
+    padding: 120px 0 40px;
     background-position: center;
   }
 

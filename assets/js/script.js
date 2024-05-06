@@ -14,12 +14,21 @@ window.addEventListener("scroll", function () {
 
 // JavaScript For Mobile Navbar
 
-const navbarToggler = document.querySelector(".navbar-toggler");
-const mobileNav = document.querySelector(".mobile__nav");
+document.addEventListener("DOMContentLoaded", function () {
+  const menuItems = document.querySelectorAll(".mobile__nav ul li a");
+  const navbarToggler = document.querySelector(".navbar-toggler");
 
-navbarToggler.addEventListener("click", () => {
-  navbarToggler.classList.toggle("active");
-  mobileNav.classList.toggle("active");
+  navbarToggler.addEventListener("click", function () {
+    navbarToggler.classList.toggle("active");
+    document.querySelector(".mobile__nav").classList.toggle("active");
+  });
+
+  menuItems.forEach(function (menuItem) {
+    menuItem.addEventListener("click", function () {
+      document.querySelector(".mobile__nav").classList.remove("active");
+      navbarToggler.classList.add("active");
+    });
+  });
 });
 
 // Landscapes Slider

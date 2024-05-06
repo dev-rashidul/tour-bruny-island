@@ -99,6 +99,14 @@ p a {
   background: var(--secondary);
 }
 
+#About__tour,
+#Where-go,
+#Tour-itinerary,
+#Landscapes,
+#Faq {
+  scroll-margin-top: 10vh;
+}
+
 /* Base Style CSS End */
 
 /* Header Part CSS Start */
@@ -169,7 +177,7 @@ nav.navbar {
 }
 
 .nav-link:hover {
-  color: var(--primary);
+  color: var(--primary) !important;
 }
 
 .book-tour-btn a {
@@ -184,16 +192,18 @@ nav.navbar {
 
   .logo a {
     font-size: 20px;
+    color: var(--black);
   }
 
   .mobile-navbar {
     position: fixed;
     width: 100%;
     padding: 30px 50px 20px;
+    background: var(--white);
   }
 
   .mobile-navbar.sticky {
-    background: var(--secondary);
+    background: var(--white);
   }
 
   .mobile__nav {
@@ -202,7 +212,7 @@ nav.navbar {
     height: 100vh;
     left: -100%;
     padding: 50px;
-    background: var(--secondary);
+    background: var(--white);
     transition: left 0.3s ease-in-out;
   }
 
@@ -212,11 +222,11 @@ nav.navbar {
 
   .mobile__nav ul li {
     padding: 20px 0;
-    border-top: 2px solid var(--white);
+    border-top: 2px solid var(--black);
   }
 
   .mobile__nav ul li:last-child {
-    border-bottom: 2px solid var(--white);
+    border-bottom: 2px solid var(--black);
   }
 
   .mobile__nav ul li a {
@@ -226,8 +236,16 @@ nav.navbar {
     font-family: "Playfair Display";
     font-size: 18px;
     font-weight: 700;
-    color: var(--white, #fff);
-    padding: 0 10px;
+    color: var(--black);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .mobile__nav ul li a:hover {
+    color: var(--primary);
+  }
+
+  .mobile-navbar.sticky .mobile__nav ul li a {
+    color: var(--black);
   }
 
   .mm__buttons {
@@ -246,6 +264,10 @@ nav.navbar {
     padding-left: 0;
   }
 
+  .mm__buttons .view_tour_guide_btn a {
+    color: var(--black);
+  }
+
   .navbar-toggler {
     border: 0 !important;
   }
@@ -261,7 +283,7 @@ nav.navbar {
   .navbar-toggler .toggler-icon {
     width: 25px;
     height: 2px;
-    background-color: var(--primary);
+    background-color: var(--black);
     display: block;
     transition: all 0.2s;
   }
@@ -299,7 +321,7 @@ nav.navbar {
   }
 
   .navbar-toggler.active .toggler-icon {
-    background-color: var(--white);
+    background-color: var(--black);
   }
 }
 
@@ -311,7 +333,7 @@ nav.navbar {
   background: url(../images/hero-bg.webp);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 200px 0 80px;
+  padding: 150px 0 80px;
 }
 
 .hero__content {
@@ -504,7 +526,8 @@ span.sec__tag {
   border-radius: 0 !important;
 }
 
-.where__tabs__buttons .nav-link.active {
+.where__tabs__buttons .nav-link.active,
+.where__tabs__buttons .nav-link:hover {
   color: var(--primary);
   background: none;
   border-bottom: 3px solid var(--primary);
@@ -715,7 +738,7 @@ span.sec__tag {
 }
 
 .accordion-button {
-  font-family: "Roboto", sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 18px;
   font-weight: 700;
   color: var(--white);
@@ -837,7 +860,8 @@ span.sec__tag {
 }
 
 .footer__social ul li i {
-  padding-left: 28px;
+  font-size: 24px;
+  padding-left: 30px;
 }
 
 .footer__social ul li a {
@@ -854,11 +878,3 @@ embed {
 }
 
 /* Footer Part CSS End */
-
-#About__tour,
-#Where-go,
-#Tour-itinerary,
-#Landscapes,
-#Faq {
-  scroll-margin-top: 10vh;
-}
