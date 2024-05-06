@@ -5,6 +5,12 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("sticky", window.scrollY > 100);
 });
 
+// Menu Active Class OnClick
+
+$(document).on("click", "ul li", function () {
+  $(this).addClass("active").siblings().removeClass("active");
+});
+
 // JavaScript For Sticky Mobile Header
 
 window.addEventListener("scroll", function () {
@@ -53,8 +59,11 @@ $(".landscapes__slider").owlCarousel({
   },
 });
 
-
 // Tooltips Config
 
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+const tooltipTriggerList = document.querySelectorAll(
+  '[data-bs-toggle="tooltip"]'
+);
+const tooltipList = [...tooltipTriggerList].map(
+  (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+);
