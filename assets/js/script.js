@@ -5,12 +5,6 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("sticky", window.scrollY > 100);
 });
 
-// Menu Active Class OnClick
-
-$(document).on("click", "ul li", function () {
-  $(this).addClass("active").siblings().removeClass("active");
-});
-
 // Function to toggle active class on menu links
 function toggleActiveClass() {
   const sections = document.querySelectorAll("section");
