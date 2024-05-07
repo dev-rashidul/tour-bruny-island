@@ -177,6 +177,10 @@ li.active .nav-link {
   color: var(--primary) !important;
 }
 
+.nav-link.active {
+  color: var(--primary) !important;
+}
+
 .navbar.sticky .nav-link {
   color: var(--black);
 }
@@ -219,6 +223,7 @@ li.active .nav-link {
     position: absolute;
     width: 100%;
     height: 100vh;
+    overflow-y: auto;
     left: -100%;
     padding: 50px;
     background: var(--white);
