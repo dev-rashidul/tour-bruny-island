@@ -892,3 +892,7 @@ embed {
 }
 
 /* Footer Part CSS End */
+
+.navbar-nav .nav-item .nav-link.active {
+  color: red; /* Change color to indicate active link */
+}

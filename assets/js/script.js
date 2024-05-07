@@ -11,6 +11,57 @@ $(document).on("click", "ul li", function () {
   $(this).addClass("active").siblings().removeClass("active");
 });
 
+// Function to toggle active class on menu links
+function toggleActiveClass() {
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(
+    ".navbar-nav .nav-item .nav-link, .footer__nav li a"
+  );
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    const scrollPosition = window.scrollY;
+
+    if (
+      scrollPosition >= sectionTop - 100 &&
+      scrollPosition < sectionTop + sectionHeight - 100
+    ) {
+      const targetId = section.getAttribute("id");
+      navLinks.forEach((link) => {
+        if (link.getAttribute("href") === `#${targetId}`) {
+          link.classList.add("active");
+        } else {
+          link.classList.remove("active");
+        }
+      });
+    }
+  });
+}
+
+// Add click event listeners to all menu links
+document
+  .querySelectorAll(".navbar-nav .nav-item .nav-link, .footer__nav li a")
+  .forEach((link) => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+
+      const targetId = this.getAttribute("href").slice(1);
+      const targetSection = document.getElementById(targetId);
+
+      window.scrollTo({
+        top: targetSection.offsetTop - 100, // Adjust offset as needed
+        behavior: "smooth",
+      });
+    });
+  });
+
+// Add scroll event listener
+window.addEventListener("scroll", toggleActiveClass);
+
+// Add scroll event listener
+window.addEventListener("scroll", toggleActiveClass);
+
 // JavaScript For Sticky Mobile Header
 
 window.addEventListener("scroll", function () {
